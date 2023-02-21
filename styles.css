@@ -1,0 +1,13 @@
+body {
+    font-family: "Open Sans";
+}
+
+.title {
+    font-family: "Domine";
+    text-align: center;
+}
+
+.big-emoji {
+    font-size: 4rem;
+    vertical-align: middle;
+}
