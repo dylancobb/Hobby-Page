@@ -14,3 +14,29 @@ body {
     font-size: 4rem;
     vertical-align: middle;
 }
+
+p {
+    margin: 50px;
+}
+
+.obsidian-logo {
+    float: right;
+    background-color: hsl(220, 50%, 91%);
+    margin: 0 50px;
+    padding: 10px;
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+    box-shadow: 0 0 20px black;
+    transition: filter 0.3s, box-shadow 0.3s;
+}
+
+.obsidian-logo:hover {
+    filter: sepia(50%);
+    box-shadow: 0 0 40px black;
+}
+
+.obsidian-logo:active {
+    filter: sepia(50%) brightness(50%);
+    box-shadow: 0 0 40px black;
+}
