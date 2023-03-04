@@ -1,9 +1,65 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
     font-family: "Open Sans";
-    background-image: linear-gradient(120deg, hsl(0, 25%, 16%), hsl(0, 7%, 30%));
+    background-image: linear-gradient(120deg, hsl(0, 15%, 18%), hsl(0, 7%, 24%));
     background-attachment: fixed;
+    margin: 0;
     color: antiquewhite;
 }
+
+/******************
+ * NAVBAR STYLING *
+ ******************/
+
+.navbar {
+    background-color: hsl(0, 9%, 11%);
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    border-bottom: 2px solid rgb(114, 109, 103);
+}
+
+.navbar a {
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: antiquewhite;
+    border-radius: 7px;
+}
+
+.navbar a:hover {
+    color: burlywood;
+    background-color: hsl(0, 15%, 27%);
+}
+
+.navbar a:active {
+    color:dimgrey;
+    background-color: hsl(0, 15%, 18%);
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        position: static;
+        flex-wrap:wrap;
+    }
+    .navbar a {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/******************
+ * NAVBAR STYLING *
+ ******************/
 
 .title {
     font-family: "Domine";
