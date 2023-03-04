@@ -9,6 +9,9 @@ Design decisions:
 - Initially I used some dummy text while making basic typography and colour scheme decisions, and to help plan the layout for the final page.
 - I created a navbar with a fixed position and a set of links to quickly scroll to the different sections of the page, and styled them using CSS. The links organised via flexbox, with a plan to add a media query to make them display centered and one-per-line on smaller viewport sizes.
 - @media query created to make the navbar display correctly on smaller screens / mobile.
+- I thought it might be nice to add some icons to the navbar and found some nice free open source SVG icons at https://feathericons.com/
 # Debugging
 - Early on I spent a lot of time trying various colour tweaks. Perhaps a content-first approach is better?
 - I had to fiddle with flexbox settings a bit to get the navbar elements to display correctly (flexbox controls are slowly sticking with me though!)
+- Ensuring the correct amount of padding below the fixed vs. statically positioned navbar at different screen sizes took some fiddling.
+- Figuring out how to change SVG stroke colors from within CSS took a while, because I didn't realise that an SVG used as the src in an img tag could not have CSS class styles applied to its SVG code.

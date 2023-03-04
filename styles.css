@@ -15,7 +15,7 @@ body {
  ******************/
 
 .navbar {
-    background-color: hsl(0, 9%, 11%);
+    background-color: hsl(0, 7%, 13%);
     margin: 0;
     padding: 5px;
     width: 100%;
@@ -26,6 +26,12 @@ body {
     flex-direction: row;
     justify-content: end;
     border-bottom: 2px solid rgb(114, 109, 103);
+}
+
+.nav-icon {
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+    stroke: antiquewhite;
 }
 
 .navbar a {
@@ -41,9 +47,28 @@ body {
     background-color: hsl(0, 15%, 27%);
 }
 
+.navbar a:hover svg {
+    stroke: burlywood;
+}
+
 .navbar a:active {
     color:dimgrey;
     background-color: hsl(0, 15%, 18%);
+}
+
+.navbar a:active svg {
+    stroke: dimgrey;
+}
+
+header {
+    padding-top: 66px;
+}
+
+#title {
+    font-family: "Domine";
+    text-align: center;
+    font-size: 36pt;
+    padding: 100px 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -55,16 +80,14 @@ body {
         text-align: center;
         width: 100%;
     }
+    header {
+        padding-top: 0px;
+    }
 }
 
-/******************
- * NAVBAR STYLING *
- ******************/
-
-.title {
-    font-family: "Domine";
-    text-align: center;
-}
+/*******************
+ * SECTION STYLING *
+ *******************/
 
 .big-emoji {
     font-size: 4rem;
