@@ -17,6 +17,9 @@ Design decisions:
 - Section headings added, and font sizes, margins and padding adjusted for different screen sizes via @media query.
 - Added some JavaScript in a script tag (since only a small amount is needed for this page) that prints today's date in a subtitle byline beneath the page title.
 - Added an additional media query for extra small mobile screens so the title + byline always print sensibly.
+- Added non-dummy text content to two of the "method" and "benefits" sections.
+- Added and stylised an external link, fulfillin the last project requirement.
+- Added and stylised external link icon.
 # Debugging
 - Early on I spent a lot of time trying various colour tweaks. Perhaps a content-first approach is better?
 - I had to fiddle with flexbox settings a bit to get the navbar elements to display correctly (flexbox controls are slowly sticking with me though!)
@@ -24,3 +27,4 @@ Design decisions:
 - Figuring out how to change SVG stroke colors from within CSS took a while, because I didn't realise that an SVG used as the src in an img tag could not have CSS class styles applied to its SVG code.
 - Accounting for the height of the navbar when scrolling to given sections was a major pain. I used a CSS ':before' pseudo-class to target section headings and add an extra 40px of space, then a negative bottom margin on the p:last-of-type of each section of the same size.
 - Getting the appended byline to display in the correct position on all screen sizes took a bit of work, but some CSS @media queries saved the day again.
+- Scrolling too fast was revealing a white scroll overflow (I think that's what it's called?); setting the body background-color to black made it look appropriate.
