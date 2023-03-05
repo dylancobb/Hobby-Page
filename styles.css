@@ -16,7 +16,7 @@ body {
 }
 
 /******************
- * NAVBAR STYLING *
+ * NAVBAR STYLING *============================================================
  ******************/
 
 .navbar {
@@ -66,7 +66,7 @@ body {
 }
 
 /******************
- * HEADER STYLING *
+ * HEADER STYLING *===========================================================
  ******************/
 
 header {
@@ -95,7 +95,7 @@ header {
 }
 
 /*******************
- * SECTION STYLING *
+ * SECTION STYLING *===========================================================
  *******************/
 
 .big-emoji {
@@ -111,6 +111,10 @@ section:before {
 
 section p:last-of-type {
     margin-bottom: -40px;
+}
+
+#graphs p:last-of-type {
+    padding-bottom: 40px;
 }
 
 .section-title {
@@ -157,6 +161,10 @@ li {
     margin-bottom: 25px;
 }
 
+/*****************
+ * IMAGE STYLING *=============================================================
+ *****************/
+
 .obsidian-logo {
     float: right;
     background-color: hsl(220, 50%, 91%);
@@ -195,11 +203,12 @@ figcaption {
     font-size: medium;
     font-style: italic;
     text-align: center;
+    padding-top: 10px;
 }
 
 footer {
     background-color: hsl(0, 7%, 13%);
-    margin: 0;
+    margin: 80px 0 0 0;
     padding: 5px;
     width: 100%;
     top: 0;
@@ -278,6 +287,24 @@ footer {
         float: none;
         display: block;
         margin: auto;
+    }
+
+    figcaption {
+        font-size: small;
+    }
+
+    footer {
+        margin: 40px 0 0 0;
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .image-box {
+        width: 80vw;
+    }
+    .image {
+        width: 80vw;
     }
 }
 
