@@ -165,6 +165,10 @@ ol {
         margin-bottom: 0;
     }
 
+    section p:last-of-type {
+        margin-bottom: 0px;
+    }
+
     .section-title {
         margin: 35px;
         font-family: "Domine";
