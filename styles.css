@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
-  }
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "Open Sans";
@@ -52,7 +56,7 @@ body {
 }
 
 .navbar a:active {
-    color:dimgrey;
+    color: dimgrey;
     background-color: hsl(0, 15%, 18%);
 }
 
@@ -61,28 +65,14 @@ body {
 }
 
 header {
-    padding-top: 66px;
+    padding-top: 40px;
 }
 
 #title {
     font-family: "Domine";
     text-align: center;
     font-size: 36pt;
-    padding: 100px 0;
-}
-
-@media only screen and (max-width: 768px) {
-    .navbar {
-        position: static;
-        flex-wrap:wrap;
-    }
-    .navbar a {
-        text-align: center;
-        width: 100%;
-    }
-    header {
-        padding-top: 0px;
-    }
+    padding: 120px 0 calc(60px - 36pt) 0;
 }
 
 /*******************
@@ -94,15 +84,27 @@ header {
     vertical-align: middle;
 }
 
-p {
+section:before {
+    height: 40px;
+    content: "";
+    display:block;
+}
+
+.section-title {
     margin: 50px;
+    font-family: "Domine";
+    font-size: 24pt;
+}
+
+p {
+    margin: 50px 50px 10px 50px;
     font-size: large;
 }
 
 .obsidian-logo {
     float: right;
     background-color: hsl(220, 50%, 91%);
-    margin: 0 50px;
+    margin: 0 50px 30px 30px;
     padding: 10px;
     height: 150px;
     width: 150px;
@@ -119,4 +121,45 @@ p {
 .obsidian-logo:active {
     filter: sepia(50%) brightness(50%);
     box-shadow: 0 0 40px black;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        position: static;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-top: 0px;
+    }
+
+    #title {
+        font-size: 24pt;
+        padding: 120px 0 calc(120px - 24pt) 0;
+    }
+
+    .big-emoji {
+        font-size: 3rem;
+        vertical-align: middle;
+    }
+
+    section:before {
+        height: 0;
+    }
+
+    .section-title {
+        margin: 35px;
+        font-family: "Domine";
+        font-size: 18pt;
+    }
+
+    p {
+        margin: 35px;
+        font-size: medium;
+    }
 }
