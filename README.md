@@ -20,6 +20,7 @@ Design decisions:
 - Added non-dummy text content to two of the "method" and "benefits" sections.
 - Added and stylised an external link, fulfillin the last project requirement.
 - Added and stylised external link icon.
+- Added some images and styled them.
 # Debugging
 - Early on I spent a lot of time trying various colour tweaks. Perhaps a content-first approach is better?
 - I had to fiddle with flexbox settings a bit to get the navbar elements to display correctly (flexbox controls are slowly sticking with me though!)
@@ -28,3 +29,4 @@ Design decisions:
 - Accounting for the height of the navbar when scrolling to given sections was a major pain. I used a CSS ':before' pseudo-class to target section headings and add an extra 40px of space, then a negative bottom margin on the p:last-of-type of each section of the same size.
 - Getting the appended byline to display in the correct position on all screen sizes took a bit of work, but some CSS @media queries saved the day again.
 - Scrolling too fast was revealing a white scroll overflow (I think that's what it's called?); setting the body background-color to black made it look appropriate.
+- Getting captioned images to display properly took a bit of CSS tweaking.
