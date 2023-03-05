@@ -105,9 +105,19 @@ p {
     font-size: large;
 }
 
+em {
+    font-style: normal;
+    font-weight: bold;
+    color:tomato;
+}
+
 ol {
     margin: 25px 50px;
     font-size: large;
+}
+
+li {
+    margin-bottom: 25px;
 }
 
 .obsidian-logo {

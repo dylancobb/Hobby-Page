@@ -3,6 +3,7 @@ I decided to make a page about Personal Knowledge Management (PKM) in Obsidian.
 Design decisions:
 - Font selection: I went with Domine for the title and Open Sans for the body text, as I feel they make a nice aesthetic pairing appropriate for this kind of topic, and both are free web fonts.
 - Colour scheme: an off-white text color on a dark brown background to match the colour scheme of my Obsidian vault seemed logical.
+- Maybe one or two other colours for links and drawing attention to keywords (since this is an "educational" page of sorts)
 - I decided I want a fixed-position navbar at the top of the screen on larger screens, that becomes a statically positioned column of 100% width links on smaller screens.
 - The navbar should have links to the different sections of the page, and clicking them should smoothly scroll to the corresponding sections.
 # Building
