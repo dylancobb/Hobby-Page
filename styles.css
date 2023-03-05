@@ -64,15 +64,33 @@ body {
     stroke: dimgrey;
 }
 
+/******************
+ * HEADER STYLING *
+ ******************/
+
 header {
     padding-top: 40px;
 }
 
 #title {
-    font-family: "Domine";
     text-align: center;
+    font-family: "Domine";
     font-size: 36pt;
-    padding: 120px 0 calc(60px - 36pt) 0;
+    padding: 100px 0px 0px 0px;
+}
+
+.subtitle {
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: medium;
+    font-weight: normal;
+    margin: 0 0 0 400px;
+}
+
+.subtitle::after {
+    content: "Hex";
+    font-weight: bold;
+    color: tomato;
 }
 
 /*******************
@@ -161,6 +179,12 @@ li {
         font-size: 24pt;
         padding: 90px 0 calc(90px - 24pt) 0;
     }
+    
+    .subtitle {
+        font-size: small;
+        font-weight: normal;
+        margin: 0 0 0 250px;
+    }
 
     .big-emoji {
         font-size: 3rem;
@@ -193,5 +217,14 @@ li {
     ol {
         margin: 35px;
         font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .break {
+        display: block;
+    }
+    .subtitle {
+        margin: 0 0 0 90px;
     }
 }

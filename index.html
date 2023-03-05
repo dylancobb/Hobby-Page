@@ -40,7 +40,18 @@
             </svg>Graphs</a>
     </nav>
     <header>
-        <h1 id="title">Building a Second Brain <span class="big-emoji">🧠</span></h1>
+        <h1 id="title">Building a <span class="break">Second Brain <span class="big-emoji">🧠</span></span></h1>
+        <script>
+            let date = new Date().toLocaleDateString();
+
+            const para = document.createElement("p");
+            para.className = 'subtitle'
+            let node = document.createTextNode(date + ", by ");
+            para.appendChild(node);
+
+            const element = document.getElementById("title");
+            element.appendChild(para);
+        </script>
     </header>
     <main>
         <section id="intro">
@@ -70,11 +81,24 @@
             <h2 class="section-title">The Method</h2>
             <p>The core of the Zettelkasten method can be broken down into three steps, or connected practices:</p>
             <ol>
-                <li>Take <em>fleeting notes</em> as you go through the day. These are for immediate, short-term storage of thoughts and ideas without worrying about whether they're particularly worth dedicating space in your Zettelkasten to. Ideas are captured here to be sifted through and either refined into Zettels or discarded as appropriate—this means there should be as little friction involved in the capturing of fleeting notes. I personally keep a cheap £1 notebook handy to scribble in whenever the need strikes.</li>
-                <li>Take <em>literature notes</em> as you consume content. Building a robust reference system helps tremendously with managing bibliographical data in academic work, but it's also useful for personal knowledge-work outside of academia, as keeping track of the sources that lead to our own ideas in the first place helps make us better and more rigorous thinkers.</li>
-                <li>Craft <em>permanent notes</em>, the actual meat of the Zettelkasten system. These are atomic ideas that link to and from other notes. By atomic, what is meant is that a single Zettel should not present multiple distinct ideas that could be better split into two or more smaller Zettels. The power of each note is not in how much information it holds, but in its interrelationship with other related notes via <em>links</em> to and from them.</li>
+                <li>Take <em>fleeting notes</em> as you go through the day. These are for immediate, short-term storage
+                    of thoughts and ideas without worrying about whether they're particularly worth dedicating space in
+                    your Zettelkasten to. Ideas are captured here to be sifted through and either refined into Zettels
+                    or discarded as appropriate—this means there should be as little friction involved in the capturing
+                    of fleeting notes. I personally keep a cheap £1 notebook handy to scribble in whenever the need
+                    strikes.</li>
+                <li>Take <em>literature notes</em> as you consume content. Building a robust reference system helps
+                    tremendously with managing bibliographical data in academic work, but it's also useful for personal
+                    knowledge-work outside of academia, as keeping track of the sources that lead to our own ideas in
+                    the first place helps make us better and more rigorous thinkers.</li>
+                <li>Craft <em>permanent notes</em>, the actual meat of the Zettelkasten system. These are atomic ideas
+                    that link to and from other notes. By atomic, what is meant is that a single Zettel should not
+                    present multiple distinct ideas that could be better split into two or more smaller Zettels. The
+                    power of each note is not in how much information it holds, but in its interrelationship with other
+                    related notes via <em>links</em> to and from them.</li>
             </ol>
-            <p>Together these three practices capture the essence of the system. Many people implement this system the same way Luhmann himself did: with boxes of index cards </p>
+            <p>Together these three practices capture the essence of the system. Many people implement this system the
+                same way Luhmann himself did: with boxes of index cards </p>
         </section>
         <section id="benefits">
             <h2 class="section-title">Benefits</h2>
