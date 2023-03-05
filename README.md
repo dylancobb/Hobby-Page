@@ -17,3 +17,4 @@ Design decisions:
 - I had to fiddle with flexbox settings a bit to get the navbar elements to display correctly (flexbox controls are slowly sticking with me though!)
 - Ensuring the correct amount of padding below the fixed vs. statically positioned navbar at different screen sizes took some fiddling.
 - Figuring out how to change SVG stroke colors from within CSS took a while, because I didn't realise that an SVG used as the src in an img tag could not have CSS class styles applied to its SVG code.
+- accounting for the height of the navbar when scrolling to given sections was a major pain. I used a CSS ':before' pseudo-class to target section headings and add an extra 40px of space, then a negative bottom margin on the p:last-of-type of each section of the same size.

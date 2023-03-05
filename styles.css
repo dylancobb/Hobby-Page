@@ -90,6 +90,10 @@ section:before {
     display:block;
 }
 
+section p:last-of-type {
+    margin-bottom: -40px;
+}
+
 .section-title {
     margin: 50px;
     font-family: "Domine";
@@ -97,7 +101,12 @@ section:before {
 }
 
 p {
-    margin: 50px 50px 10px 50px;
+    margin: 0 50px;
+    font-size: large;
+}
+
+ol {
+    margin: 25px 50px;
     font-size: large;
 }
 
@@ -140,7 +149,7 @@ p {
 
     #title {
         font-size: 24pt;
-        padding: 120px 0 calc(120px - 24pt) 0;
+        padding: 90px 0 calc(90px - 24pt) 0;
     }
 
     .big-emoji {
@@ -151,6 +160,10 @@ p {
     section:before {
         height: 0;
     }
+    
+    section {
+        margin-bottom: 0;
+    }
 
     .section-title {
         margin: 35px;
@@ -159,6 +172,11 @@ p {
     }
 
     p {
+        margin: 35px;
+        font-size: medium;
+    }
+
+    ol {
         margin: 35px;
         font-size: medium;
     }
