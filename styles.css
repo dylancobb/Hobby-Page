@@ -165,10 +165,20 @@ li {
  * IMAGE STYLING *=============================================================
  *****************/
 
-.obsidian-logo {
+.logo-box {
     float: right;
+    margin: 0 50px 80px 30px;
+    padding: 10px;
+    height: 150px;
+    width: 150px;
+}
+
+.logo-box figcaption {
+    margin-left: 17px;
+}
+
+.obsidian-logo {
     background-color: hsl(220, 50%, 91%);
-    margin: 0 50px 30px 30px;
     padding: 10px;
     height: 150px;
     width: 150px;
@@ -315,9 +325,10 @@ footer {
     .subtitle {
         margin: 0 0 0 90px;
     }
-    .obsidian-logo {
+    .logo-box {
         float: none;
         display: block;
         margin: auto;
+        margin-bottom: 80px;
     }
 }

@@ -7,6 +7,7 @@ Design decisions:
 - I decided I want a fixed-position navbar at the top of the screen on larger screens, that becomes a statically positioned column of 100% width links on smaller screens.
 - The navbar should have links to the different sections of the page, and clicking them should smoothly scroll to the corresponding sections.
 - since the project needs today's date printed somewhere, I figure a date + byline just below the title will look neat.
+- A similarly styled footer at the end of the page to the footer at the top seems logical.
 # Building
 - I set up the standard boilerplate HTML code and created a CSS stylesheet for the site.
 - Initially I used some dummy text while making basic typography and colour scheme decisions, and to help plan the layout for the final page.
@@ -21,6 +22,8 @@ Design decisions:
 - Added and stylised an external link, fulfillin the last project requirement.
 - Added and stylised external link icon.
 - Added some images and styled them.
+- A footer was added.
+- The remaining text content was added.
 # Debugging
 - Early on I spent a lot of time trying various colour tweaks. Perhaps a content-first approach is better?
 - I had to fiddle with flexbox settings a bit to get the navbar elements to display correctly (flexbox controls are slowly sticking with me though!)
