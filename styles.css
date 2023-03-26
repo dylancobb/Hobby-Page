@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     background-color: black;
     background-image: linear-gradient(120deg, hsl(0, 15%, 18%), hsl(0, 7%, 24%));
     background-attachment: fixed;
@@ -75,14 +75,14 @@ header {
 
 #title {
     text-align: center;
-    font-family: "Domine";
+    font-family: "Domine", serif;
     font-size: 36pt;
     padding: 100px 0px 0px 0px;
 }
 
 .subtitle {
     text-align: center;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-size: medium;
     font-weight: normal;
     margin: 0 0 0 400px;
@@ -119,7 +119,7 @@ section p:last-of-type {
 
 .section-title {
     margin: 50px;
-    font-family: "Domine";
+    font-family: "Domine", serif;
     font-size: 24pt;
 }
 
@@ -274,7 +274,7 @@ footer {
 
     .section-title {
         margin: 35px;
-        font-family: "Domine";
+        font-family: "Domine", serif;
         font-size: 18pt;
     }
 
