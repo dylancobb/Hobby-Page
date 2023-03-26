@@ -19,7 +19,7 @@ Design decisions:
 - Added some JavaScript in a script tag (since only a small amount is needed for this page) that prints today's date in a subtitle byline beneath the page title.
 - Added an additional media query for extra small mobile screens so the title + byline always print sensibly.
 - Added non-dummy text content to two of the "method" and "benefits" sections.
-- Added and stylised an external link, fulfillin the last project requirement.
+- Added and stylised an external link, fulfilling the last project requirement.
 - Added and stylised external link icon.
 - Added some images and styled them.
 - A footer was added.
